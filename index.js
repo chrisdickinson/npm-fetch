@@ -33,6 +33,11 @@ function fetch(name, spec, options) {
 
   var p = url.parse(spec) || {}
 
+  if((!p.protocol || p.protocol.indexOf('@') > -1) && spec.indexOf('@')) {
+    spec = 'git+ssh://' + spec
+    p = url.parse(spec) || {}
+  }
+
   switch (p.protocol) {
     case 'http:':
     case 'https:':

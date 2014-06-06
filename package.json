@@ -20,7 +20,14 @@
     "hyperquest": "~0.2.0",
     "barrage": "~1.0.0",
     "discern": "~1.1.0",
-    "npm-registry-client": "~0.3.3"
+    "npm-registry-client": "~0.3.3",
+    "git-fetch-pack": "0.0.3",
+    "git-transport-protocol": "0.0.7",
+    "git-list-pack": "0.0.10",
+    "git-objectify-pack": "0.0.12",
+    "through": "^2.3.4",
+    "git-walk-tree": "0.0.3",
+    "tar": "^0.1.19"
   },
   "devDependencies": {
     "mocha": "~1.9",
